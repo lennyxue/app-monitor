@@ -20,10 +20,10 @@ public class MailSenderImpl implements MailSender {
     public void sendAMail(String content, String subject) throws Exception {
         Properties map = System.getProperties();
         MailConfig mailConfig = new MailConfig();
-        mailConfig.setSmtpHost(map.getProperty("mail.smtp.host", "mmmail.aspire-tech.com"));
-        mailConfig.setSenderAddress(map.getProperty("mail.sender.address", "htxl_ops@aspirecn.com"));
-        mailConfig.setSenderAccount(map.getProperty("mail.sender.account", "htxl_ops"));
-        mailConfig.setSenderPassword(map.getProperty("mail.sender.password", "asp@123"));
+        mailConfig.setSmtpHost(map.getProperty("mail.smtp.host", "test.smtp"));
+        mailConfig.setSenderAddress(map.getProperty("mail.sender.address", "demo@comp"));
+        mailConfig.setSenderAccount(map.getProperty("mail.sender.account", "account"));
+        mailConfig.setSenderPassword(map.getProperty("mail.sender.password", "password"));
         String address = map.getProperty("mail.recipient.address", "");
         if (address.length()==0){
             logger.error("No recipient is defined, skip to send mail");

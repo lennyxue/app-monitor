@@ -7,4 +7,4 @@ logging:
 mail:
   recipient:
     #address: xuequnmou@aspirecn.com,caiyayu@aspirecn.com,hucy@aspirecn.com,chenggr@aspirecn.com,quanbopeng@aspirecn.com,caoweizhong@aspirecn.com,huangkai@aspirecn.com
-    address: xuequnmou@aspirecn.com
+    address: test
