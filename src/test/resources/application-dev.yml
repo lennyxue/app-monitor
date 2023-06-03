@@ -1,9 +1,0 @@
-server:
-  port: 9123
-
-logging:
-  config: classpath:log4j2.xml
-
-mail:
-  recipient:
-    address: xuequnmou@163.com
